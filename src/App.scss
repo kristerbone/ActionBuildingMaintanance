@@ -1,0 +1,52 @@
+@import '../node_modules/bootstrap/scss/_functions.scss';
+@import '../node_modules/bootstrap/scss/_variables.scss';
+@import '../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
+
+
+$font-stack: "helvetica neue", "myriad pro", helvetica, arial, sans-serif;
+$font-colour: #960100;
+
+$body-bg: #000;
+$body-color: #111;
+
+body{
+  font: $font-stack;
+}
+
+.container{
+  background-color: white;
+}
+
+.container, .row, .col{
+  //border: #222 solid 1px;
+}
+
+.sd-header{
+  padding-left: 0;
+  padding-right: 0;
+  color: $font-colour;
+  a, a:hover, a:visited { color: white; text-decoration: none; } 
+  .sd-header-phone .btn { background-color: $font-colour; }
+  .sd-header-text { font-size: 2.3em; font-weight: 900; text-align: center; padding-top: 0.4em; }
+  .sd-header-sub-text { text-align: right; }
+}
+
+.sd-header-text{
+  padding-top: 0.2em;
+}
+
+@include media-breakpoint-down(md) { 
+  .sd-header{  
+    .sd-header-text { font-size: 1.5em; }    
+    .sd-header-sub-text { text-align: center; }    
+    .sd-header-phone{
+      .btn{
+        width: 100%;
+        margin-top: 0.2em;
+      }
+    }
+    .sd-header-logo{
+      text-align: center;
+    }
+  }
+}

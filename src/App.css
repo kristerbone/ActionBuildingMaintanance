@@ -1,0 +1,36 @@
+body {
+  font: "helvetica neue", "myriad pro", helvetica, arial, sans-serif; }
+
+.container {
+  background-color: white; }
+
+.sd-header {
+  padding-left: 0;
+  padding-right: 0;
+  color: #960100; }
+  .sd-header a, .sd-header a:hover, .sd-header a:visited {
+    color: white;
+    text-decoration: none; }
+  .sd-header .sd-header-phone .btn {
+    background-color: #960100; }
+  .sd-header .sd-header-text {
+    font-size: 2.3em;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 0.4em; }
+  .sd-header .sd-header-sub-text {
+    text-align: right; }
+
+.sd-header-text {
+  padding-top: 0.2em; }
+
+@media (max-width: 991.98px) {
+  .sd-header .sd-header-text {
+    font-size: 1.5em; }
+  .sd-header .sd-header-sub-text {
+    text-align: center; }
+  .sd-header .sd-header-phone .btn {
+    width: 100%;
+    margin-top: 0.2em; }
+  .sd-header .sd-header-logo {
+    text-align: center; } }
